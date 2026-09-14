@@ -3,260 +3,309 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#f7f8fb" />
-  <meta name="description" content="LumaCard — виртуальные зарубежные карты для подписок, магазинов и повседневных сервисов." />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'" />
-  <title>LumaCard — виртуальные карты для повседневных сервисов</title>
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Работа в FIT — вакансии склада: размещение, приёмка, сборка и водитель погрузчика." />
+  <title>Работа в FIT — вакансии склада</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="FIT — наверх">
+        <span class="fit-logo">FIT</span>
+        <span class="brand-copy"><b>Работа в FIT</b><small>Инструменты для ремонта</small></span>
+      </a>
 
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="LumaCard">
-      <span class="brand-mark">L</span>
-      <span>LumaCard</span>
-    </a>
-    <nav class="desktop-nav" aria-label="Основная навигация">
-      <a href="#cards">Карты</a>
-      <a href="#benefits">Преимущества</a>
-      <a href="#how">Как это работает</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <button class="header-cta" data-scroll-cards>Выбрать карту</button>
+      <nav class="nav" id="nav">
+        <a href="#vacancies">Вакансии</a>
+        <a href="#about">О работе</a>
+        <a href="#process">Как устроиться</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+
+      <a class="nav-cta" href="#vacancies">Смотреть вакансии</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <div class="eyebrow">Виртуальные карты нового поколения</div>
-        <h1>Оплачивайте привычные сервисы <span>без лишних границ</span></h1>
-        <p class="hero-sub">Выберите подходящий сценарий, регион и тариф. Выпуск — 99 ₽, обслуживание — 0 ₽ на 5 лет, комиссия сервиса — 0%.</p>
-        <div class="hero-actions">
-          <button class="primary-btn" data-scroll-cards>Подобрать карту</button>
-          <a class="text-btn" href="#benefits">Посмотреть условия <span>→</span></a>
-        </div>
-        <div class="hero-stats" aria-label="Ключевые условия">
-          <div><strong>0%</strong><span>комиссия сервиса</span></div>
-          <div><strong>99 ₽</strong><span>разовый выпуск</span></div>
-          <div><strong>5 лет</strong><span>обслуживание 0 ₽</span></div>
-        </div>
-      </div>
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Открыт набор на склад</div>
+          <h1>Работа в <em>FIT</em>.<br>Всё по делу.</h1>
+          <p class="hero-lead">Ищем сотрудников на размещение, приёмку, сборку заказов и водителя погрузчика. Понятные задачи, современный склад и зарплата от 90 000 ₽.</p>
 
-      <div class="hero-visual" aria-hidden="true">
-        <div class="glow-ring"></div>
-        <div class="card-stack card-back"></div>
-        <div class="payment-card hero-card">
-          <div class="card-topline"><span class="mini-logo">L</span><span>WORLD</span></div>
-          <div class="chip"><i></i><i></i><i></i><i></i></div>
-          <div class="card-number">••••&nbsp;&nbsp;••••&nbsp;&nbsp;••••&nbsp;&nbsp;2847</div>
-          <div class="card-bottom"><span>LUMA MEMBER</span><span>09/31</span></div>
-          <div class="contactless">)))</div>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#vacancies">Выбрать вакансию</a>
+            <a class="secondary-btn" href="#about">Что за работа</a>
+          </div>
+
+          <div class="hero-stats">
+            <div><strong>4</strong><span>открытые вакансии</span></div>
+            <div><strong>90 000 ₽</strong><span>стартовая зарплата</span></div>
+            <div><strong>100 000+ ₽</strong><span>на сборке</span></div>
+          </div>
         </div>
-        <div class="floating-pill pill-one"><span class="pill-icon">✓</span><span><b>Готово к оплате</b><small>Активация за минуту</small></span></div>
-        <div class="floating-pill pill-two"><span class="dot"></span><span><b>0 ₽</b><small>обслуживание</small></span></div>
+
+        <div class="hero-banner" aria-label="Склад FIT">
+          <div class="banner-top">
+            <span class="banner-badge">FIT · КАРЬЕРА</span>
+            <span class="live-dot"><i></i> Идёт набор</span>
+          </div>
+
+          <svg class="warehouse-art" viewBox="0 0 620 420" role="img" aria-label="Современный склад с палетами и погрузчиком">
+            <defs>
+              <linearGradient id="wall" x1="0" x2="1">
+                <stop offset="0" stop-color="#f7f8fa"/>
+                <stop offset="1" stop-color="#eef1f4"/>
+              </linearGradient>
+              <linearGradient id="red" x1="0" x2="1">
+                <stop offset="0" stop-color="#ef312f"/>
+                <stop offset="1" stop-color="#c91f22"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="620" height="420" rx="30" fill="url(#wall)"/>
+            <path d="M0 328H620V420H0z" fill="#dfe3e7"/>
+            <path d="M0 335H620" stroke="#c7cdd3" stroke-width="3"/>
+            <path d="M40 55H580" stroke="#d5d9dd" stroke-width="2"/>
+            <path d="M40 92H580" stroke="#e2e5e8" stroke-width="2"/>
+            <g opacity=".98">
+              <rect x="58" y="112" width="182" height="206" rx="8" fill="#40454c"/>
+              <rect x="68" y="125" width="162" height="49" rx="4" fill="#fff"/>
+              <rect x="68" y="187" width="162" height="49" rx="4" fill="#fff"/>
+              <rect x="68" y="249" width="162" height="49" rx="4" fill="#fff"/>
+              <g fill="#d89b5d">
+                <rect x="82" y="138" width="40" height="26" rx="3"/><rect x="130" y="136" width="56" height="28" rx="3"/>
+                <rect x="82" y="198" width="61" height="28" rx="3"/><rect x="151" y="202" width="58" height="24" rx="3"/>
+                <rect x="82" y="260" width="49" height="28" rx="3"/><rect x="139" y="258" width="70" height="30" rx="3"/>
+              </g>
+            </g>
+            <g>
+              <rect x="273" y="96" width="121" height="222" rx="8" fill="#454a51"/>
+              <rect x="283" y="109" width="101" height="54" rx="4" fill="#fff"/>
+              <rect x="283" y="178" width="101" height="54" rx="4" fill="#fff"/>
+              <rect x="283" y="247" width="101" height="51" rx="4" fill="#fff"/>
+              <g fill="#c98e53">
+                <rect x="297" y="121" width="34" height="31" rx="3"/><rect x="338" y="124" width="33" height="28" rx="3"/>
+                <rect x="297" y="190" width="74" height="31" rx="3"/>
+                <rect x="297" y="258" width="32" height="29" rx="3"/><rect x="336" y="258" width="35" height="29" rx="3"/>
+              </g>
+            </g>
+            <g transform="translate(405 217)">
+              <path d="M38 15h86c10 0 18 8 18 18v55H23V30c0-8 7-15 15-15z" fill="url(#red)"/>
+              <path d="M50 26h42v30H50z" fill="#e7edf1"/>
+              <path d="M93 26h18c6 0 11 5 11 11v19H93z" fill="#ccd6dc"/>
+              <circle cx="50" cy="92" r="20" fill="#272b30"/><circle cx="50" cy="92" r="9" fill="#9aa1a8"/>
+              <circle cx="119" cy="92" r="20" fill="#272b30"/><circle cx="119" cy="92" r="9" fill="#9aa1a8"/>
+              <rect x="0" y="77" width="28" height="8" rx="4" fill="#33373c"/>
+              <rect x="-3" y="38" width="7" height="50" fill="#33373c"/>
+              <rect x="-24" y="84" width="54" height="6" rx="3" fill="#33373c"/>
+            </g>
+            <g transform="translate(426 104)">
+              <rect width="143" height="70" rx="15" fill="#ffffff"/>
+              <rect x="18" y="17" width="57" height="36" rx="7" fill="#ed2d2f"/>
+              <text x="46.5" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="900" fill="#fff">FIT</text>
+              <text x="87" y="31" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#8a9097">РАБОТА</text>
+              <text x="87" y="45" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#202428">НА СКЛАДЕ</text>
+            </g>
+          </svg>
+
+          <div class="salary-float">
+            <small>Зарплата</small>
+            <b>от 90 000 ₽</b>
+            <span>в месяц</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="trust-strip section-shell">
-      <span>Подходит для</span>
-      <div class="logo-list">
-        <b>AI & SaaS</b><b>App Store</b><b>Google Play</b><b>Streaming</b><b>Travel</b><b>Games</b>
+    <section class="quick-strip">
+      <div class="shell quick-grid">
+        <div><span class="quick-icon">01</span><b>Размещение</b><strong>90 000 ₽</strong></div>
+        <div><span class="quick-icon">02</span><b>Приёмка</b><strong>90 000 ₽</strong></div>
+        <div><span class="quick-icon">03</span><b>Сборка</b><strong>100 000+ ₽</strong></div>
+        <div><span class="quick-icon">04</span><b>Погрузчик</b><strong>100 000 ₽</strong></div>
       </div>
     </section>
 
-    <section class="section-shell section-space" id="cards">
-      <div class="section-heading">
+    <section class="section" id="vacancies">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow"><span></span> Вакансии</div>
+            <h2>Выбирай свою роль</h2>
+          </div>
+          <p>Четыре направления работы на складе. Зарплаты указаны прямо в карточках — без скрытых диапазонов.</p>
+        </div>
+
+        <div class="filter-row" aria-label="Фильтр вакансий">
+          <button class="filter active" data-filter="all" type="button">Все вакансии</button>
+          <button class="filter" data-filter="warehouse" type="button">Склад</button>
+          <button class="filter" data-filter="equipment" type="button">Спецтехника</button>
+        </div>
+
+        <div class="vacancy-grid">
+          <article class="vacancy-card" data-category="warehouse">
+            <div class="vacancy-top">
+              <div class="role-icon">РЗ</div>
+              <span class="status">Открыта</span>
+            </div>
+            <div class="vacancy-label">Склад · размещение</div>
+            <h3>Сотрудник размещения</h3>
+            <p>Размещать принятый товар по адресам хранения, работать с ячейками и поддерживать порядок в зоне размещения.</p>
+            <div class="salary"><small>Зарплата</small><strong>90 000 ₽</strong><span>в месяц</span></div>
+            <div class="role-details">
+              <span><b>Что важно</b>Внимательность и аккуратность</span>
+              <span><b>Задача</b>Товар должен быстро попасть на своё место</span>
+            </div>
+            <a class="card-btn" href="#process">Как устроиться <span>→</span></a>
+          </article>
+
+          <article class="vacancy-card" data-category="warehouse">
+            <div class="vacancy-top">
+              <div class="role-icon">ПР</div>
+              <span class="status">Открыта</span>
+            </div>
+            <div class="vacancy-label">Склад · приёмка</div>
+            <h3>Сотрудник приёмки</h3>
+            <p>Принимать поступающий товар, проверять соответствие поставок и помогать быстро запускать товар дальше по складу.</p>
+            <div class="salary"><small>Зарплата</small><strong>90 000 ₽</strong><span>в месяц</span></div>
+            <div class="role-details">
+              <span><b>Что важно</b>Внимательность к товару и документам</span>
+              <span><b>Задача</b>Точно и быстро принять поставку</span>
+            </div>
+            <a class="card-btn" href="#process">Как устроиться <span>→</span></a>
+          </article>
+
+          <article class="vacancy-card featured-card" data-category="warehouse">
+            <div class="popular-tag">Высокий доход</div>
+            <div class="vacancy-top">
+              <div class="role-icon">СБ</div>
+              <span class="status">Открыта</span>
+            </div>
+            <div class="vacancy-label">Склад · сборка</div>
+            <h3>Сборщик заказов</h3>
+            <p>Собирать заказы по заданию, находить нужные позиции в ячейках и передавать готовые заказы на следующий этап.</p>
+            <div class="salary"><small>Зарплата</small><strong>от 100 000 ₽</strong><span>в месяц</span></div>
+            <div class="role-details">
+              <span><b>Что важно</b>Темп, точность и ответственность</span>
+              <span><b>Задача</b>Собирать заказ без ошибок</span>
+            </div>
+            <a class="card-btn" href="#process">Как устроиться <span>→</span></a>
+          </article>
+
+          <article class="vacancy-card" data-category="equipment">
+            <div class="vacancy-top">
+              <div class="role-icon">ВП</div>
+              <span class="status">Открыта</span>
+            </div>
+            <div class="vacancy-label">Склад · спецтехника</div>
+            <h3>Водитель погрузчика</h3>
+            <p>Работать на погрузчике при перемещении товара и палет по складу. Нужен уверенный практический опыт.</p>
+            <div class="salary"><small>Зарплата</small><strong>100 000 ₽</strong><span>в месяц</span></div>
+            <div class="role-details">
+              <span><b>Обязательно</b>Категория B</span>
+              <span><b>Опыт</b>От 1 года</span>
+            </div>
+            <a class="card-btn" href="#process">Как устроиться <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="about">
+      <div class="shell about-grid">
+        <div class="about-copy">
+          <div class="eyebrow"><span></span> Работа в FIT</div>
+          <h2>Склад — это команда, а не просто коробки</h2>
+          <p>FIT работает с товарами для ремонта и инструмента. На складе каждый участок связан с другим: товар нужно принять, разместить, собрать и передать дальше без лишних задержек.</p>
+          <p>Поэтому здесь важны понятные процессы, скорость и аккуратность. Каждая вакансия — отдельная роль в общей цепочке.</p>
+          <div class="note">Точный график, адрес площадки и остальные условия лучше указывать после подтверждения данных от HR — сейчас сайт не придумывает их сам.</div>
+        </div>
+
+        <div class="flow-card">
+          <div class="flow-title">Как движется товар</div>
+          <div class="flow-step"><span>1</span><div><b>Приёмка</b><small>Товар приезжает на склад</small></div></div>
+          <div class="flow-line"></div>
+          <div class="flow-step"><span>2</span><div><b>Размещение</b><small>Каждая позиция отправляется в свою ячейку</small></div></div>
+          <div class="flow-line"></div>
+          <div class="flow-step"><span>3</span><div><b>Сборка</b><small>Из ячеек собираются заказы</small></div></div>
+          <div class="flow-line"></div>
+          <div class="flow-step"><span>4</span><div><b>Перемещение</b><small>Палеты и товар перемещаются техникой</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section">
+      <div class="shell values-grid">
+        <div class="values-copy">
+          <span class="mini-kicker">FIT · СКЛАД</span>
+          <h2>Что ценим в работе</h2>
+          <p>Без громких обещаний — только то, что реально важно для нормальной складской команды.</p>
+        </div>
+        <div class="value-card"><span>01</span><h3>Точность</h3><p>Товар, ячейка и заказ должны совпадать.</p></div>
+        <div class="value-card"><span>02</span><h3>Темп</h3><p>Склад работает как единый поток — без лишних остановок.</p></div>
+        <div class="value-card"><span>03</span><h3>Ответственность</h3><p>Результат каждого участка влияет на всю смену.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="shell">
+        <div class="section-head center-head">
+          <div>
+            <div class="eyebrow"><span></span> Как устроиться</div>
+            <h2>Три простых шага</h2>
+          </div>
+          <p>Сайт уже готов под вакансии. Контакт HR можно добавить отдельной кнопкой, как только будет номер телефона или ссылка.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article><span class="step-num">1</span><h3>Выбери вакансию</h3><p>Размещение, приёмка, сборка или водитель погрузчика.</p></article>
+          <article><span class="step-num">2</span><h3>Свяжись с HR</h3><p>Уточни график, адрес склада и детали по конкретной вакансии.</p></article>
+          <article><span class="step-num">3</span><h3>Приходи знакомиться</h3><p>После разговора с HR можно переходить к следующему этапу устройства.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="shell faq-layout">
+        <div class="faq-copy">
+          <div class="eyebrow"><span></span> Вопросы</div>
+          <h2>Коротко о главном</h2>
+          <p>Информация на странице собрана по открытым сейчас направлениям набора.</p>
+        </div>
+        <div class="faq-list">
+          <details open><summary>Какая самая высокая зарплата?<span>+</span></summary><p>На сборке указано от 100 000 ₽ в месяц. Для водителя погрузчика — 100 000 ₽.</p></details>
+          <details><summary>Нужен ли опыт для работы на погрузчике?<span>+</span></summary><p>Да. Для водителя погрузчика требуется категория B и опыт работы от одного года.</p></details>
+          <details><summary>Какая зарплата на приёмке и размещении?<span>+</span></summary><p>На обеих вакансиях указана зарплата 90 000 ₽ в месяц.</p></details>
+          <details><summary>Где посмотреть график и адрес?<span>+</span></summary><p>Эти данные пока не указаны, чтобы не придумывать условия. Их можно добавить на сайт после получения точной информации от HR.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="shell final-card">
         <div>
-          <div class="eyebrow">Линейка карт</div>
-          <h2>Выберите карту под свою задачу</h2>
+          <span class="mini-kicker red-kicker">Сейчас открыты 4 вакансии</span>
+          <h2>Найди своё место в FIT</h2>
+          <p>Выбери направление, которое подходит именно тебе.</p>
         </div>
-        <p>У каждой карты свой сценарий использования и виртуальный регион. Условия одинаково простые — без скрытых платежей.</p>
+        <a class="white-btn" href="#vacancies">Смотреть вакансии</a>
       </div>
-
-      <div class="filter-row" role="group" aria-label="Фильтр карт">
-        <button class="filter active" data-filter="all">Все</button>
-        <button class="filter" data-filter="subscriptions">Подписки</button>
-        <button class="filter" data-filter="stores">Магазины приложений</button>
-        <button class="filter" data-filter="travel">Путешествия</button>
-        <button class="filter" data-filter="daily">На каждый день</button>
-      </div>
-
-      <div class="cards-grid">
-        <article class="product-card" data-category="subscriptions">
-          <div class="product-visual visual-singapore">
-            <div class="country-tag">🇸🇬 Сингапур</div>
-            <div class="payment-card compact-card black-card">
-              <div class="card-topline"><span class="mini-logo">L</span><span>SUB</span></div>
-              <div class="chip"><i></i><i></i><i></i><i></i></div>
-              <div class="card-number">•••• 6108</div>
-              <div class="card-bottom"><span>LUMA SUB</span><span>09/31</span></div>
-            </div>
-          </div>
-          <div class="product-body">
-            <div class="product-kicker">Luma Sub</div>
-            <h3>Для подписок и AI-сервисов</h3>
-            <p>Для регулярных онлайн-платежей, цифровых сервисов, облачных инструментов и подписок.</p>
-            <div class="chips"><span>AI-сервисы</span><span>Streaming</span><span>SaaS</span></div>
-            <div class="price-row"><div><small>Выпуск</small><strong>99 ₽</strong></div><button class="order-btn" data-card="Luma Sub" data-country="Сингапур">Оформить</button></div>
-          </div>
-        </article>
-
-        <article class="product-card featured" data-category="stores">
-          <div class="featured-badge">Популярная</div>
-          <div class="product-visual visual-netherlands">
-            <div class="country-tag">🇳🇱 Нидерланды</div>
-            <div class="payment-card compact-card pearl-card">
-              <div class="card-topline"><span class="mini-logo dark-logo">L</span><span>STORE</span></div>
-              <div class="chip light-chip"><i></i><i></i><i></i><i></i></div>
-              <div class="card-number">•••• 4532</div>
-              <div class="card-bottom"><span>LUMA STORE</span><span>09/31</span></div>
-            </div>
-          </div>
-          <div class="product-body">
-            <div class="product-kicker">Luma Store</div>
-            <h3>App Store и Google Play</h3>
-            <p>Сценарий для приложений, игр, внутриигровых покупок и цифрового контента.</p>
-            <div class="chips"><span>App Store</span><span>Google Play</span><span>Games</span></div>
-            <div class="price-row"><div><small>Выпуск</small><strong>99 ₽</strong></div><button class="order-btn" data-card="Luma Store" data-country="Нидерланды">Оформить</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="travel">
-          <div class="product-visual visual-turkey">
-            <div class="country-tag">🇹🇷 Турция</div>
-            <div class="payment-card compact-card coral-card">
-              <div class="card-topline"><span class="mini-logo">L</span><span>TRAVEL</span></div>
-              <div class="chip"><i></i><i></i><i></i><i></i></div>
-              <div class="card-number">•••• 8074</div>
-              <div class="card-bottom"><span>LUMA TRAVEL</span><span>09/31</span></div>
-            </div>
-          </div>
-          <div class="product-body">
-            <div class="product-kicker">Luma Travel</div>
-            <h3>Для поездок и бронирований</h3>
-            <p>Удобный сценарий для туристических сервисов, билетов, бронирований и поездок.</p>
-            <div class="chips"><span>Hotels</span><span>Tickets</span><span>Travel</span></div>
-            <div class="price-row"><div><small>Выпуск</small><strong>99 ₽</strong></div><button class="order-btn" data-card="Luma Travel" data-country="Турция">Оформить</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="daily">
-          <div class="product-visual visual-estonia">
-            <div class="country-tag">🇪🇪 Эстония</div>
-            <div class="payment-card compact-card blue-card">
-              <div class="card-topline"><span class="mini-logo">L</span><span>DAILY</span></div>
-              <div class="chip"><i></i><i></i><i></i><i></i></div>
-              <div class="card-number">•••• 1998</div>
-              <div class="card-bottom"><span>LUMA DAILY</span><span>09/31</span></div>
-            </div>
-          </div>
-          <div class="product-body">
-            <div class="product-kicker">Luma Daily</div>
-            <h3>Универсальная карта</h3>
-            <p>Нейтральный вариант для повседневных онлайн-покупок и международных сервисов.</p>
-            <div class="chips"><span>Shopping</span><span>Services</span><span>Daily</span></div>
-            <div class="price-row"><div><small>Выпуск</small><strong>99 ₽</strong></div><button class="order-btn" data-card="Luma Daily" data-country="Эстония">Оформить</button></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="benefits-section" id="benefits">
-      <div class="section-shell section-space">
-        <div class="section-heading compact-heading">
-          <div><div class="eyebrow">Без мелкого шрифта</div><h2>Простые условия</h2></div>
-        </div>
-        <div class="benefits-grid">
-          <article><div class="icon-box">0%</div><h3>Без комиссии сервиса</h3><p>Никаких дополнительных процентов при пополнении и оплате покупок.</p></article>
-          <article><div class="icon-box">5Y</div><h3>0 ₽ за обслуживание</h3><p>Обслуживание карты бесплатно в течение пяти лет с даты выпуска.</p></article>
-          <article><div class="icon-box">99</div><h3>Фиксированный выпуск</h3><p>На всех вариантах отображается одна понятная цена — 99 ₽.</p></article>
-          <article><div class="icon-box">24/7</div><h3>Онлайн в любое время</h3><p>Сайт адаптирован для телефона, планшета и компьютера.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-shell section-space" id="how">
-      <div class="section-heading">
-        <div><div class="eyebrow">Три шага</div><h2>Как это работает</h2></div>
-        <p>Для заявки нужны только имя и номер телефона — без документов и банковских реквизитов.</p>
-      </div>
-      <div class="steps">
-        <article><span>01</span><h3>Выберите сценарий</h3><p>Подписки, магазины приложений, поездки или универсальная карта.</p></article>
-        <article><span>02</span><h3>Проверьте регион</h3><p>Для каждого варианта указан свой регион выпуска и основная валюта.</p></article>
-        <article><span>03</span><h3>Нажмите «Оформить»</h3><p>Заполните короткую заявку и подтвердите выпуск карты.</p></article>
-      </div>
-    </section>
-
-    <section class="section-shell section-space" id="faq">
-      <div class="faq-layout">
-        <div class="faq-title"><div class="eyebrow">Вопросы и ответы</div><h2>Часто спрашивают</h2><p>Коротко о том, что происходит на этой странице.</p></div>
-        <div class="accordion">
-          <details><summary>Какие данные нужны для оформления?<span>+</span></summary><p>Только имя и контактный номер. Документы и реквизиты банковской карты на этом этапе не требуются.</p></details>
-          <details><summary>Сайт сохраняет данные посетителя?<span>+</span></summary><p>Нет. Введённые имя и номер не отправляются на сервер и удаляются из формы сразу после подтверждения.</p></details>
-          <details><summary>Как быстро выпускается карта?<span>+</span></summary><p>Виртуальные реквизиты становятся доступны после подтверждения заявки.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section section-shell">
-      <div>
-        <div class="eyebrow light">Готовы посмотреть?</div>
-        <h2>Выберите свою виртуальную карту</h2>
-        <p>Несколько сценариев, удобные регионы и выпуск всего за 99 ₽.</p>
-      </div>
-      <button class="white-btn" data-scroll-cards>К картам</button>
     </section>
   </main>
 
-  <footer class="footer section-shell">
-    <div class="footer-main">
-      <div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark">L</span><span>LumaCard</span></a><p>Виртуальные карты для международных подписок, приложений и онлайн-покупок.</p></div>
-      <div class="footer-links"><a href="#cards">Карты</a><a href="#benefits">Условия</a><a href="#faq">FAQ</a></div>
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div class="brand footer-brand">
+        <span class="fit-logo">FIT</span>
+        <span class="brand-copy"><b>Работа в FIT</b><small>Инструменты для ремонта</small></span>
+      </div>
+      <div class="footer-nav"><a href="#vacancies">Вакансии</a><a href="#about">О работе</a><a href="#process">Как устроиться</a></div>
+      <div class="footer-note">Карьерная страница · 2026</div>
     </div>
-    <div class="footer-bottom"><span>© 2026 LumaCard</span><span>Безопасное оформление без передачи платёжных реквизитов.</span></div>
   </footer>
-
-  <div class="modal" id="orderModal" aria-hidden="true">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" data-close-modal aria-label="Закрыть">×</button>
-      <div class="modal-step" id="confirmStep">
-        <div class="modal-icon">L</div>
-        <div class="eyebrow">Проверка заявки</div>
-        <h2 id="modalTitle">Подтвердите выбор</h2>
-        <p class="modal-copy">Вы выбрали <strong id="selectedCard">Luma Card</strong> · <span id="selectedCountry">регион</span>.</p>
-        <div class="summary-box">
-          <div><span>Выпуск</span><b>99 ₽</b></div>
-          <div><span>Обслуживание</span><b>0 ₽ / 5 лет</b></div>
-          <div><span>Комиссия сервиса</span><b>0%</b></div>
-        </div>
-        <form id="orderForm" autocomplete="off" novalidate>
-          <div class="form-fields">
-            <label class="field-label" for="customerName">Имя и фамилия</label>
-            <input class="form-input" id="customerName" type="text" maxlength="80" placeholder="Например, Алексей Иванов" autocomplete="off" required>
-            <label class="field-label" for="customerPhone">Номер телефона</label>
-            <input class="form-input" id="customerPhone" type="tel" maxlength="22" inputmode="tel" placeholder="+7 999 000-00-00" autocomplete="off" required>
-          </div>
-          <label class="consent"><input type="checkbox" id="dataConsent" required><span>Я принимаю условия и соглашаюсь на обработку данных для оформления заявки.</span></label>
-          <button class="primary-btn wide" id="confirmOrder" type="submit">Оформить карту за 99 ₽</button>
-          <small class="privacy-note">Данные никуда не отправляются и удаляются из формы сразу после нажатия кнопки.</small>
-        </form>
-      </div>
-
-      <div class="modal-step hidden prank-step" id="prankStep">
-        <div class="prank-burst">😂</div>
-        <div class="eyebrow">Заявка успешно… не создана</div>
-        <h2>Ты чё, еблан? ВХАХАХАХ 😭</h2>
-        <p>Это наебалово — никаких карт тут нет. Тебя просто красиво разыграли.</p>
-        <div class="prank-ticket"><span>Статус заявки</span><b>ДРУГ ПОПАЛСЯ</b><small>Деньги и данные не списывались и не отправлялись.</small></div>
-        <button class="primary-btn wide" data-close-modal>Ладно, хорош 😂</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="toast" id="toast">Выберите карту ниже</div>
 
   <script src="script.js"></script>
 </body>
