@@ -348,6 +348,27 @@ details p { margin: -4px 40px 24px 0; color: var(--muted); line-height: 1.65; fo
 .summary-box { margin: 22px 0; padding: 15px 17px; border: 1px solid #e7e9ef; border-radius: 18px; background: #fafbfc; }
 .summary-box div { display: flex; justify-content: space-between; gap: 20px; padding: 9px 0; color: #6f7480; font-size: 12px; }
 .summary-box b { color: #20232b; }
+
+.form-fields { display: grid; gap: 8px; margin: 20px 0 16px; }
+.field-label { margin-top: 8px; color: #303440; font-size: 12px; font-weight: 800; }
+.form-input {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 15px;
+  border: 1px solid #dfe2e9;
+  border-radius: 14px;
+  outline: none;
+  color: #171922;
+  background: #fafbfc;
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.form-input::placeholder { color: #a5a9b2; }
+.form-input:focus {
+  border-color: #7a69f4;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(111,92,255,.11);
+}
+
 .consent { display: flex; gap: 12px; align-items: flex-start; cursor: pointer; color: #5f6570; font-size: 12px; line-height: 1.5; }
 .consent input { width: 18px; height: 18px; margin: 1px 0 0; accent-color: #6c5bff; }
 .wide { width: 100%; margin-top: 22px; }
