@@ -1,312 +1,214 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="description" content="Работа в FIT — вакансии склада: размещение, приёмка, сборка и водитель погрузчика." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Вакансии склада FIT: размещение, приёмка, сборка и водитель погрузчика.">
   <title>Работа в FIT — вакансии склада</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="shell nav-wrap">
-      <a class="brand" href="#top" aria-label="FIT — наверх">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo-wrap" href="#top" aria-label="FIT — наверх">
         <span class="fit-logo">FIT</span>
-        <span class="brand-copy"><b>Работа в FIT</b><small>Инструменты для ремонта</small></span>
+        <span class="logo-text"><b>Работа в FIT</b><small>вакансии склада</small></span>
       </a>
 
-      <nav class="nav" id="nav">
+      <nav class="main-nav" aria-label="Навигация">
         <a href="#vacancies">Вакансии</a>
-        <a href="#about">О работе</a>
+        <a href="#conditions">Условия</a>
         <a href="#process">Как устроиться</a>
-        <a href="#faq">Вопросы</a>
       </nav>
 
-      <a class="nav-cta" href="#vacancies">Смотреть вакансии</a>
-      <button class="menu-btn" id="menuBtn" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <a class="header-button" href="#vacancies">Смотреть вакансии</a>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="shell hero-grid">
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow"><span></span> Открыт набор на склад</div>
-          <h1>Работа в <em>FIT</em>.<br>Всё по делу.</h1>
-          <p class="hero-lead">Ищем сотрудников на размещение, приёмку, сборку заказов и водителя погрузчика. Понятные задачи, современный склад и зарплата от 90 000 ₽.</p>
+          <div class="kicker"><span></span> Открыт набор на склад FIT</div>
+          <h1>Работа, где<br><em>виден результат.</em></h1>
+          <p class="hero-text">Набираем сотрудников на размещение, приёмку, сборку заказов и управление погрузчиком. Зарплата — от 90 000 ₽ в месяц.</p>
 
           <div class="hero-actions">
-            <a class="primary-btn" href="#vacancies">Выбрать вакансию</a>
-            <a class="secondary-btn" href="#about">Что за работа</a>
+            <a class="button-primary" href="#vacancies">Выбрать вакансию</a>
+            <a class="button-secondary" href="#conditions">Посмотреть условия</a>
           </div>
 
-          <div class="hero-stats">
-            <div><strong>4</strong><span>открытые вакансии</span></div>
-            <div><strong>90 000 ₽</strong><span>стартовая зарплата</span></div>
-            <div><strong>100 000+ ₽</strong><span>на сборке</span></div>
+          <div class="hero-facts">
+            <div><strong>4</strong><span>открытые позиции</span></div>
+            <div><strong>90 000 ₽</strong><span>размещение и приёмка</span></div>
+            <div><strong>100 000+ ₽</strong><span>сборка заказов</span></div>
           </div>
         </div>
 
-        <div class="hero-banner" aria-label="Склад FIT">
-          <div class="banner-top">
-            <span class="banner-badge">FIT · КАРЬЕРА</span>
-            <span class="live-dot"><i></i> Идёт набор</span>
+        <div class="hero-banner" aria-label="Карьерный баннер FIT">
+          <div class="banner-grid"></div>
+          <div class="banner-head">
+            <span class="banner-fit">FIT</span>
+            <span class="hiring"><i></i> ИДЁТ НАБОР</span>
           </div>
 
-          <svg class="warehouse-art" viewBox="0 0 620 420" role="img" aria-label="Современный склад с палетами и погрузчиком">
-            <defs>
-              <linearGradient id="wall" x1="0" x2="1">
-                <stop offset="0" stop-color="#f7f8fa"/>
-                <stop offset="1" stop-color="#eef1f4"/>
-              </linearGradient>
-              <linearGradient id="red" x1="0" x2="1">
-                <stop offset="0" stop-color="#ef312f"/>
-                <stop offset="1" stop-color="#c91f22"/>
-              </linearGradient>
-            </defs>
-            <rect x="0" y="0" width="620" height="420" rx="30" fill="url(#wall)"/>
-            <path d="M0 328H620V420H0z" fill="#dfe3e7"/>
-            <path d="M0 335H620" stroke="#c7cdd3" stroke-width="3"/>
-            <path d="M40 55H580" stroke="#d5d9dd" stroke-width="2"/>
-            <path d="M40 92H580" stroke="#e2e5e8" stroke-width="2"/>
-            <g opacity=".98">
-              <rect x="58" y="112" width="182" height="206" rx="8" fill="#40454c"/>
-              <rect x="68" y="125" width="162" height="49" rx="4" fill="#fff"/>
-              <rect x="68" y="187" width="162" height="49" rx="4" fill="#fff"/>
-              <rect x="68" y="249" width="162" height="49" rx="4" fill="#fff"/>
-              <g fill="#d89b5d">
-                <rect x="82" y="138" width="40" height="26" rx="3"/><rect x="130" y="136" width="56" height="28" rx="3"/>
-                <rect x="82" y="198" width="61" height="28" rx="3"/><rect x="151" y="202" width="58" height="24" rx="3"/>
-                <rect x="82" y="260" width="49" height="28" rx="3"/><rect x="139" y="258" width="70" height="30" rx="3"/>
-              </g>
-            </g>
-            <g>
-              <rect x="273" y="96" width="121" height="222" rx="8" fill="#454a51"/>
-              <rect x="283" y="109" width="101" height="54" rx="4" fill="#fff"/>
-              <rect x="283" y="178" width="101" height="54" rx="4" fill="#fff"/>
-              <rect x="283" y="247" width="101" height="51" rx="4" fill="#fff"/>
-              <g fill="#c98e53">
-                <rect x="297" y="121" width="34" height="31" rx="3"/><rect x="338" y="124" width="33" height="28" rx="3"/>
-                <rect x="297" y="190" width="74" height="31" rx="3"/>
-                <rect x="297" y="258" width="32" height="29" rx="3"/><rect x="336" y="258" width="35" height="29" rx="3"/>
-              </g>
-            </g>
-            <g transform="translate(405 217)">
-              <path d="M38 15h86c10 0 18 8 18 18v55H23V30c0-8 7-15 15-15z" fill="url(#red)"/>
-              <path d="M50 26h42v30H50z" fill="#e7edf1"/>
-              <path d="M93 26h18c6 0 11 5 11 11v19H93z" fill="#ccd6dc"/>
-              <circle cx="50" cy="92" r="20" fill="#272b30"/><circle cx="50" cy="92" r="9" fill="#9aa1a8"/>
-              <circle cx="119" cy="92" r="20" fill="#272b30"/><circle cx="119" cy="92" r="9" fill="#9aa1a8"/>
-              <rect x="0" y="77" width="28" height="8" rx="4" fill="#33373c"/>
-              <rect x="-3" y="38" width="7" height="50" fill="#33373c"/>
-              <rect x="-24" y="84" width="54" height="6" rx="3" fill="#33373c"/>
-            </g>
-            <g transform="translate(426 104)">
-              <rect width="143" height="70" rx="15" fill="#ffffff"/>
-              <rect x="18" y="17" width="57" height="36" rx="7" fill="#ed2d2f"/>
-              <text x="46.5" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="900" fill="#fff">FIT</text>
-              <text x="87" y="31" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#8a9097">РАБОТА</text>
-              <text x="87" y="45" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#202428">НА СКЛАДЕ</text>
-            </g>
-          </svg>
+          <div class="banner-copy">
+            <span>СКЛАДСКАЯ КОМАНДА</span>
+            <h2>Твоя смена.<br>Твой результат.</h2>
+          </div>
 
-          <div class="salary-float">
-            <small>Зарплата</small>
-            <b>от 90 000 ₽</b>
+          <div class="warehouse-scene" aria-hidden="true">
+            <div class="rack rack-one"><i></i><i></i><i></i></div>
+            <div class="rack rack-two"><i></i><i></i><i></i></div>
+            <div class="floor-line"></div>
+            <div class="forklift">
+              <div class="forklift-cabin"></div>
+              <div class="forklift-body"></div>
+              <div class="wheel wheel-a"></div>
+              <div class="wheel wheel-b"></div>
+              <div class="mast"></div>
+              <div class="fork"></div>
+            </div>
+          </div>
+
+          <div class="salary-card">
+            <small>ЗАРПЛАТА</small>
+            <strong>от 90 000 ₽</strong>
             <span>в месяц</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="quick-strip">
-      <div class="shell quick-grid">
-        <div><span class="quick-icon">01</span><b>Размещение</b><strong>90 000 ₽</strong></div>
-        <div><span class="quick-icon">02</span><b>Приёмка</b><strong>90 000 ₽</strong></div>
-        <div><span class="quick-icon">03</span><b>Сборка</b><strong>100 000+ ₽</strong></div>
-        <div><span class="quick-icon">04</span><b>Погрузчик</b><strong>100 000 ₽</strong></div>
+    <section class="salary-strip" aria-label="Зарплаты по направлениям">
+      <div class="container salary-strip-grid">
+        <div><span>Размещение</span><strong>90 000 ₽</strong></div>
+        <div><span>Приёмка</span><strong>90 000 ₽</strong></div>
+        <div><span>Сборка</span><strong>от 100 000 ₽</strong></div>
+        <div><span>Погрузчик</span><strong>100 000 ₽</strong></div>
       </div>
     </section>
 
     <section class="section" id="vacancies">
-      <div class="shell">
-        <div class="section-head">
+      <div class="container">
+        <div class="section-title-row">
           <div>
-            <div class="eyebrow"><span></span> Вакансии</div>
-            <h2>Выбирай свою роль</h2>
+            <div class="kicker"><span></span> Вакансии</div>
+            <h2>Выбирай направление</h2>
           </div>
-          <p>Четыре направления работы на складе. Зарплаты указаны прямо в карточках — без скрытых диапазонов.</p>
-        </div>
-
-        <div class="filter-row" aria-label="Фильтр вакансий">
-          <button class="filter active" data-filter="all" type="button">Все вакансии</button>
-          <button class="filter" data-filter="warehouse" type="button">Склад</button>
-          <button class="filter" data-filter="equipment" type="button">Спецтехника</button>
+          <p>Без длинных описаний и скрытых диапазонов. Сразу видно основную задачу и зарплату.</p>
         </div>
 
         <div class="vacancy-grid">
-          <article class="vacancy-card" data-category="warehouse">
-            <div class="vacancy-top">
-              <div class="role-icon">РЗ</div>
-              <span class="status">Открыта</span>
+          <article class="vacancy-card">
+            <div class="vacancy-head">
+              <span class="role-number">01</span>
+              <span class="open-label">Вакансия открыта</span>
             </div>
-            <div class="vacancy-label">Склад · размещение</div>
+            <div class="role-meta">СКЛАД · РАЗМЕЩЕНИЕ</div>
             <h3>Сотрудник размещения</h3>
-            <p>Размещать принятый товар по адресам хранения, работать с ячейками и поддерживать порядок в зоне размещения.</p>
-            <div class="salary"><small>Зарплата</small><strong>90 000 ₽</strong><span>в месяц</span></div>
-            <div class="role-details">
-              <span><b>Что важно</b>Внимательность и аккуратность</span>
-              <span><b>Задача</b>Товар должен быстро попасть на своё место</span>
-            </div>
-            <a class="card-btn" href="#process">Как устроиться <span>→</span></a>
+            <p>Размещать принятый товар по адресам хранения и поддерживать понятный порядок в зоне размещения.</p>
+            <div class="pay-row"><span>Зарплата</span><strong>90 000 ₽</strong></div>
+            <div class="card-note"><b>Основная задача</b><span>Товар должен быстро попасть на своё место.</span></div>
+            <a href="#process" class="vacancy-link">Как устроиться <span>→</span></a>
           </article>
 
-          <article class="vacancy-card" data-category="warehouse">
-            <div class="vacancy-top">
-              <div class="role-icon">ПР</div>
-              <span class="status">Открыта</span>
+          <article class="vacancy-card">
+            <div class="vacancy-head">
+              <span class="role-number">02</span>
+              <span class="open-label">Вакансия открыта</span>
             </div>
-            <div class="vacancy-label">Склад · приёмка</div>
+            <div class="role-meta">СКЛАД · ПРИЁМКА</div>
             <h3>Сотрудник приёмки</h3>
-            <p>Принимать поступающий товар, проверять соответствие поставок и помогать быстро запускать товар дальше по складу.</p>
-            <div class="salary"><small>Зарплата</small><strong>90 000 ₽</strong><span>в месяц</span></div>
-            <div class="role-details">
-              <span><b>Что важно</b>Внимательность к товару и документам</span>
-              <span><b>Задача</b>Точно и быстро принять поставку</span>
-            </div>
-            <a class="card-btn" href="#process">Как устроиться <span>→</span></a>
+            <p>Принимать поступающий товар, сверять поставки и передавать принятые позиции дальше по складскому процессу.</p>
+            <div class="pay-row"><span>Зарплата</span><strong>90 000 ₽</strong></div>
+            <div class="card-note"><b>Основная задача</b><span>Точно и быстро принять поставку.</span></div>
+            <a href="#process" class="vacancy-link">Как устроиться <span>→</span></a>
           </article>
 
-          <article class="vacancy-card featured-card" data-category="warehouse">
-            <div class="popular-tag">Высокий доход</div>
-            <div class="vacancy-top">
-              <div class="role-icon">СБ</div>
-              <span class="status">Открыта</span>
+          <article class="vacancy-card accent-card">
+            <div class="vacancy-head">
+              <span class="role-number">03</span>
+              <span class="open-label">Вакансия открыта</span>
             </div>
-            <div class="vacancy-label">Склад · сборка</div>
+            <div class="role-meta">СКЛАД · СБОРКА</div>
             <h3>Сборщик заказов</h3>
             <p>Собирать заказы по заданию, находить нужные позиции в ячейках и передавать готовые заказы на следующий этап.</p>
-            <div class="salary"><small>Зарплата</small><strong>от 100 000 ₽</strong><span>в месяц</span></div>
-            <div class="role-details">
-              <span><b>Что важно</b>Темп, точность и ответственность</span>
-              <span><b>Задача</b>Собирать заказ без ошибок</span>
-            </div>
-            <a class="card-btn" href="#process">Как устроиться <span>→</span></a>
+            <div class="pay-row"><span>Зарплата</span><strong>от 100 000 ₽</strong></div>
+            <div class="card-note"><b>Основная задача</b><span>Собирать заказ быстро и без ошибок.</span></div>
+            <a href="#process" class="vacancy-link">Как устроиться <span>→</span></a>
           </article>
 
-          <article class="vacancy-card" data-category="equipment">
-            <div class="vacancy-top">
-              <div class="role-icon">ВП</div>
-              <span class="status">Открыта</span>
+          <article class="vacancy-card">
+            <div class="vacancy-head">
+              <span class="role-number">04</span>
+              <span class="open-label">Вакансия открыта</span>
             </div>
-            <div class="vacancy-label">Склад · спецтехника</div>
+            <div class="role-meta">СКЛАД · СПЕЦТЕХНИКА</div>
             <h3>Водитель погрузчика</h3>
-            <p>Работать на погрузчике при перемещении товара и палет по складу. Нужен уверенный практический опыт.</p>
-            <div class="salary"><small>Зарплата</small><strong>100 000 ₽</strong><span>в месяц</span></div>
-            <div class="role-details">
-              <span><b>Обязательно</b>Категория B</span>
-              <span><b>Опыт</b>От 1 года</span>
+            <p>Перемещать товар и палеты по складу на погрузчике. Нужен уверенный практический опыт управления техникой.</p>
+            <div class="pay-row"><span>Зарплата</span><strong>100 000 ₽</strong></div>
+            <div class="requirements">
+              <div><b>Категория</b><span>B</span></div>
+              <div><b>Опыт</b><span>от 1 года</span></div>
             </div>
-            <a class="card-btn" href="#process">Как устроиться <span>→</span></a>
+            <a href="#process" class="vacancy-link">Как устроиться <span>→</span></a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section soft-section" id="about">
-      <div class="shell about-grid">
-        <div class="about-copy">
-          <div class="eyebrow"><span></span> Работа в FIT</div>
-          <h2>Склад — это команда, а не просто коробки</h2>
-          <p>FIT работает с товарами для ремонта и инструмента. На складе каждый участок связан с другим: товар нужно принять, разместить, собрать и передать дальше без лишних задержек.</p>
-          <p>Поэтому здесь важны понятные процессы, скорость и аккуратность. Каждая вакансия — отдельная роль в общей цепочке.</p>
-          <div class="note">Точный график, адрес площадки и остальные условия лучше указывать после подтверждения данных от HR — сейчас сайт не придумывает их сам.</div>
+    <section class="section conditions" id="conditions">
+      <div class="container conditions-grid">
+        <div class="conditions-copy">
+          <div class="kicker"><span></span> О работе</div>
+          <h2>Понятные задачи.<br>Понятная зарплата.</h2>
+          <p>FIT — компания, связанная с товарами и инструментами для ремонта. На складе каждое направление отвечает за свой этап движения товара: приёмка, размещение, сборка и перемещение.</p>
+          <p class="muted-note">График, точное место работы, оформление и дополнительные условия лучше подтверждать у HR при отклике — мы не стали выдумывать то, чего ты не давал.</p>
         </div>
 
-        <div class="flow-card">
-          <div class="flow-title">Как движется товар</div>
-          <div class="flow-step"><span>1</span><div><b>Приёмка</b><small>Товар приезжает на склад</small></div></div>
-          <div class="flow-line"></div>
-          <div class="flow-step"><span>2</span><div><b>Размещение</b><small>Каждая позиция отправляется в свою ячейку</small></div></div>
-          <div class="flow-line"></div>
-          <div class="flow-step"><span>3</span><div><b>Сборка</b><small>Из ячеек собираются заказы</small></div></div>
-          <div class="flow-line"></div>
-          <div class="flow-step"><span>4</span><div><b>Перемещение</b><small>Палеты и товар перемещаются техникой</small></div></div>
+        <div class="conditions-list">
+          <div class="condition-item"><span>01</span><div><b>Приёмка</b><p>Товар приезжает на склад, проверяется и запускается дальше.</p></div></div>
+          <div class="condition-item"><span>02</span><div><b>Размещение</b><p>Принятый товар распределяется по адресам хранения.</p></div></div>
+          <div class="condition-item"><span>03</span><div><b>Сборка</b><p>Нужные позиции собираются по заказам для дальнейшей отгрузки.</p></div></div>
+          <div class="condition-item"><span>04</span><div><b>Погрузчик</b><p>Палеты и товар перемещаются по складу с помощью техники.</p></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section dark-section">
-      <div class="shell values-grid">
-        <div class="values-copy">
-          <span class="mini-kicker">FIT · СКЛАД</span>
-          <h2>Что ценим в работе</h2>
-          <p>Без громких обещаний — только то, что реально важно для нормальной складской команды.</p>
-        </div>
-        <div class="value-card"><span>01</span><h3>Точность</h3><p>Товар, ячейка и заказ должны совпадать.</p></div>
-        <div class="value-card"><span>02</span><h3>Темп</h3><p>Склад работает как единый поток — без лишних остановок.</p></div>
-        <div class="value-card"><span>03</span><h3>Ответственность</h3><p>Результат каждого участка влияет на всю смену.</p></div>
-      </div>
-    </section>
-
-    <section class="section" id="process">
-      <div class="shell">
-        <div class="section-head center-head">
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section-title-row process-head">
           <div>
-            <div class="eyebrow"><span></span> Как устроиться</div>
+            <div class="kicker"><span></span> Как устроиться</div>
             <h2>Три простых шага</h2>
           </div>
-          <p>Сайт уже готов под вакансии. Контакт HR можно добавить отдельной кнопкой, как только будет номер телефона или ссылка.</p>
+          <p>Выбери подходящую роль, обсуди детали с HR и выходи после согласования условий.</p>
         </div>
 
-        <div class="steps-grid">
-          <article><span class="step-num">1</span><h3>Выбери вакансию</h3><p>Размещение, приёмка, сборка или водитель погрузчика.</p></article>
-          <article><span class="step-num">2</span><h3>Свяжись с HR</h3><p>Уточни график, адрес склада и детали по конкретной вакансии.</p></article>
-          <article><span class="step-num">3</span><h3>Приходи знакомиться</h3><p>После разговора с HR можно переходить к следующему этапу устройства.</p></article>
+        <div class="process-grid">
+          <article><span>01</span><h3>Выбрать вакансию</h3><p>Определи, какое направление подходит тебе по задачам и зарплате.</p></article>
+          <article><span>02</span><h3>Связаться с HR</h3><p>Уточнить график, оформление, адрес склада и остальные условия.</p></article>
+          <article><span>03</span><h3>Согласовать выход</h3><p>После подтверждения условий договориться о дате выхода на работу.</p></article>
         </div>
-      </div>
-    </section>
 
-    <section class="section faq-section" id="faq">
-      <div class="shell faq-layout">
-        <div class="faq-copy">
-          <div class="eyebrow"><span></span> Вопросы</div>
-          <h2>Коротко о главном</h2>
-          <p>Информация на странице собрана по открытым сейчас направлениям набора.</p>
+        <div class="contact-card">
+          <div>
+            <span>ХОЧЕШЬ В КОМАНДУ FIT?</span>
+            <h2>Выбери вакансию выше — контакты HR можно добавить сюда.</h2>
+          </div>
+          <a href="#vacancies">Вернуться к вакансиям</a>
         </div>
-        <div class="faq-list">
-          <details open><summary>Какая самая высокая зарплата?<span>+</span></summary><p>На сборке указано от 100 000 ₽ в месяц. Для водителя погрузчика — 100 000 ₽.</p></details>
-          <details><summary>Нужен ли опыт для работы на погрузчике?<span>+</span></summary><p>Да. Для водителя погрузчика требуется категория B и опыт работы от одного года.</p></details>
-          <details><summary>Какая зарплата на приёмке и размещении?<span>+</span></summary><p>На обеих вакансиях указана зарплата 90 000 ₽ в месяц.</p></details>
-          <details><summary>Где посмотреть график и адрес?<span>+</span></summary><p>Эти данные пока не указаны, чтобы не придумывать условия. Их можно добавить на сайт после получения точной информации от HR.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="shell final-card">
-        <div>
-          <span class="mini-kicker red-kicker">Сейчас открыты 4 вакансии</span>
-          <h2>Найди своё место в FIT</h2>
-          <p>Выбери направление, которое подходит именно тебе.</p>
-        </div>
-        <a class="white-btn" href="#vacancies">Смотреть вакансии</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="shell footer-grid">
-      <div class="brand footer-brand">
-        <span class="fit-logo">FIT</span>
-        <span class="brand-copy"><b>Работа в FIT</b><small>Инструменты для ремонта</small></span>
-      </div>
-      <div class="footer-nav"><a href="#vacancies">Вакансии</a><a href="#about">О работе</a><a href="#process">Как устроиться</a></div>
-      <div class="footer-note">Карьерная страница · 2026</div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="fit-logo small">FIT</span><div><b>Работа в FIT</b><small>Инструменты для ремонта</small></div></div>
+      <p>Карьерная страница вакансий склада. Детали условий уточняются при отклике.</p>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
