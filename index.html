@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7f8fb" />
+  <meta name="description" content="LumaCard — демонстрационный развлекательный проект с виртуальными картами." />
+  <title>LumaCard — виртуальные карты для повседневных сервисов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="LumaCard">
+      <span class="brand-mark">L</span>
+      <span>LumaCard</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#cards">Карты</a>
+      <a href="#benefits">Преимущества</a>
+      <a href="#how">Как это работает</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="header-cta" data-scroll-cards>Выбрать карту</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow">Виртуальные карты нового поколения</div>
+        <h1>Оплачивайте привычные сервисы <span>без лишних границ</span></h1>
+        <p class="hero-sub">Выберите подходящий сценарий, регион и тариф. Выпуск — 99 ₽, обслуживание — 0 ₽ на 5 лет, комиссия сервиса — 0%.</p>
+        <div class="hero-actions">
+          <button class="primary-btn" data-scroll-cards>Подобрать карту</button>
+          <a class="text-btn" href="#benefits">Посмотреть условия <span>→</span></a>
+        </div>
+        <div class="hero-stats" aria-label="Ключевые условия">
+          <div><strong>0%</strong><span>комиссия сервиса</span></div>
+          <div><strong>99 ₽</strong><span>разовый выпуск</span></div>
+          <div><strong>5 лет</strong><span>обслуживание 0 ₽</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="glow-ring"></div>
+        <div class="card-stack card-back"></div>
+        <div class="payment-card hero-card">
+          <div class="card-topline"><span class="mini-logo">L</span><span>WORLD</span></div>
+          <div class="chip"><i></i><i></i><i></i><i></i></div>
+          <div class="card-number">••••&nbsp;&nbsp;••••&nbsp;&nbsp;••••&nbsp;&nbsp;2847</div>
+          <div class="card-bottom"><span>LUMA MEMBER</span><span>09/31</span></div>
+          <div class="contactless">)))</div>
+        </div>
+        <div class="floating-pill pill-one"><span class="pill-icon">✓</span><span><b>Готово к оплате</b><small>Активация за минуту</small></span></div>
+        <div class="floating-pill pill-two"><span class="dot"></span><span><b>0 ₽</b><small>обслуживание</small></span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip section-shell">
+      <span>Подходит для</span>
+      <div class="logo-list">
+        <b>AI & SaaS</b><b>App Store</b><b>Google Play</b><b>Streaming</b><b>Travel</b><b>Games</b>
+      </div>
+    </section>
+
+    <section class="section-shell section-space" id="cards">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">Линейка карт</div>
+          <h2>Выберите карту под свою задачу</h2>
+        </div>
+        <p>У каждой карты свой сценарий использования и виртуальный регион. Условия одинаково простые — без скрытых платежей.</p>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Фильтр карт">
+        <button class="filter active" data-filter="all">Все</button>
+        <button class="filter" data-filter="subscriptions">Подписки</button>
+        <button class="filter" data-filter="stores">Магазины приложений</button>
+        <button class="filter" data-filter="travel">Путешествия</button>
+        <button class="filter" data-filter="daily">На каждый день</button>
+      </div>
+
+      <div class="cards-grid">
+        <article class="product-card" data-category="subscriptions">
+          <div class="product-visual visual-singapore">
+            <div class="country-tag">🇸🇬 Сингапур</div>
+            <div class="payment-card compact-card black-card">
+              <div class="card-topline"><span class="mini-logo">L</span><span>SUB</span></div>
+              <div class="chip"><i></i><i></i><i></i><i></i></div>
+              <div class="card-number">•••• 6108</div>
+              <div class="card-bottom"><span>LUMA SUB</span><span>09/31</span></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-kicker">Luma Sub</div>
+            <h3>Для подписок и AI-сервисов</h3>
+            <p>Для регулярных онлайн-платежей, цифровых сервисов, облачных инструментов и подписок.</p>
+            <div class="chips"><span>AI-сервисы</span><span>Streaming</span><span>SaaS</span></div>
+            <div class="price-row"><div><small>Выпуск</small><strong>99 ₽</strong></div><button class="order-btn" data-card="Luma Sub" data-country="Сингапур">Оформить</button></div>
+          </div>
+        </article>
+
+        <article class="product-card featured" data-category="stores">
+          <div class="featured-badge">Популярная</div>
+          <div class="product-visual visual-netherlands">
+            <div class="country-tag">🇳🇱 Нидерланды</div>
+            <div class="payment-card compact-card pearl-card">
+              <div class="card-topline"><span class="mini-logo dark-logo">L</span><span>STORE</span></div>
+              <div class="chip light-chip"><i></i><i></i><i></i><i></i></div>
+              <div class="card-number">•••• 4532</div>
+              <div class="card-bottom"><span>LUMA STORE</span><span>09/31</span></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-kicker">Luma Store</div>
+            <h3>App Store и Google Play</h3>
+            <p>Сценарий для приложений, игр, внутриигровых покупок и цифрового контента.</p>
+            <div class="chips"><span>App Store</span><span>Google Play</span><span>Games</span></div>
+            <div class="price-row"><div><small>Выпуск</small><strong>99 ₽</strong></div><button class="order-btn" data-card="Luma Store" data-country="Нидерланды">Оформить</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="travel">
+          <div class="product-visual visual-turkey">
+            <div class="country-tag">🇹🇷 Турция</div>
+            <div class="payment-card compact-card coral-card">
+              <div class="card-topline"><span class="mini-logo">L</span><span>TRAVEL</span></div>
+              <div class="chip"><i></i><i></i><i></i><i></i></div>
+              <div class="card-number">•••• 8074</div>
+              <div class="card-bottom"><span>LUMA TRAVEL</span><span>09/31</span></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-kicker">Luma Travel</div>
+            <h3>Для поездок и бронирований</h3>
+            <p>Удобный сценарий для туристических сервисов, билетов, бронирований и поездок.</p>
+            <div class="chips"><span>Hotels</span><span>Tickets</span><span>Travel</span></div>
+            <div class="price-row"><div><small>Выпуск</small><strong>99 ₽</strong></div><button class="order-btn" data-card="Luma Travel" data-country="Турция">Оформить</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="daily">
+          <div class="product-visual visual-estonia">
+            <div class="country-tag">🇪🇪 Эстония</div>
+            <div class="payment-card compact-card blue-card">
+              <div class="card-topline"><span class="mini-logo">L</span><span>DAILY</span></div>
+              <div class="chip"><i></i><i></i><i></i><i></i></div>
+              <div class="card-number">•••• 1998</div>
+              <div class="card-bottom"><span>LUMA DAILY</span><span>09/31</span></div>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-kicker">Luma Daily</div>
+            <h3>Универсальная карта</h3>
+            <p>Нейтральный вариант для повседневных онлайн-покупок и международных сервисов.</p>
+            <div class="chips"><span>Shopping</span><span>Services</span><span>Daily</span></div>
+            <div class="price-row"><div><small>Выпуск</small><strong>99 ₽</strong></div><button class="order-btn" data-card="Luma Daily" data-country="Эстония">Оформить</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="benefits-section" id="benefits">
+      <div class="section-shell section-space">
+        <div class="section-heading compact-heading">
+          <div><div class="eyebrow">Без мелкого шрифта</div><h2>Простые условия</h2></div>
+        </div>
+        <div class="benefits-grid">
+          <article><div class="icon-box">0%</div><h3>Без комиссии сервиса</h3><p>Никаких дополнительных процентов со стороны демонстрационного сервиса.</p></article>
+          <article><div class="icon-box">5Y</div><h3>0 ₽ за обслуживание</h3><p>В макете обслуживание показано бесплатным на весь пятилетний период.</p></article>
+          <article><div class="icon-box">99</div><h3>Фиксированный выпуск</h3><p>На всех вариантах отображается одна понятная цена — 99 ₽.</p></article>
+          <article><div class="icon-box">24/7</div><h3>Онлайн в любое время</h3><p>Сайт адаптирован для телефона, планшета и компьютера.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section-space" id="how">
+      <div class="section-heading">
+        <div><div class="eyebrow">Три шага</div><h2>Как это работает</h2></div>
+        <p>Никаких документов, банковских реквизитов или платежных данных сайт не запрашивает и не отправляет.</p>
+      </div>
+      <div class="steps">
+        <article><span>01</span><h3>Выберите сценарий</h3><p>Подписки, магазины приложений, поездки или универсальная карта.</p></article>
+        <article><span>02</span><h3>Проверьте регион</h3><p>Для каждого варианта показан свой демонстрационный виртуальный регион.</p></article>
+        <article><span>03</span><h3>Нажмите «Оформить»</h3><p>После подтверждения откроется финальная часть розыгрыша.</p></article>
+      </div>
+    </section>
+
+    <section class="section-shell section-space" id="faq">
+      <div class="faq-layout">
+        <div class="faq-title"><div class="eyebrow">Вопросы и ответы</div><h2>Часто спрашивают</h2><p>Коротко о том, что происходит на этой странице.</p></div>
+        <div class="accordion">
+          <details><summary>Это настоящий банк или платёжный сервис?<span>+</span></summary><p>Нет. Это демонстрационный развлекательный проект. Он не выпускает карты и не оказывает финансовые услуги.</p></details>
+          <details><summary>Сайт сохраняет данные посетителя?<span>+</span></summary><p>Нет. Здесь нет формы с телефоном, банковскими реквизитами или документами, нет базы данных и отправки персональных данных.</p></details>
+          <details><summary>Можно ли здесь реально оплатить выпуск карты?<span>+</span></summary><p>Нет. Любые цены и условия на странице являются частью демонстрационного макета.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section section-shell">
+      <div>
+        <div class="eyebrow light">Готовы посмотреть?</div>
+        <h2>Выберите свой вариант карты</h2>
+        <p>Четыре сценария, четыре региона и один неожиданный финал.</p>
+      </div>
+      <button class="white-btn" data-scroll-cards>К картам</button>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark">L</span><span>LumaCard</span></a><p>Демонстрационный развлекательный проект. Не является банком, платёжной системой или эмитентом карт.</p></div>
+      <div class="footer-links"><a href="#cards">Карты</a><a href="#benefits">Условия</a><a href="#faq">FAQ</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 LumaCard Demo</span><span>Никакие персональные или платёжные данные не собираются.</span></div>
+  </footer>
+
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Закрыть">×</button>
+      <div class="modal-step" id="confirmStep">
+        <div class="modal-icon">L</div>
+        <div class="eyebrow">Проверка заявки</div>
+        <h2 id="modalTitle">Подтвердите выбор</h2>
+        <p class="modal-copy">Вы выбрали <strong id="selectedCard">Luma Card</strong> · <span id="selectedCountry">регион</span>.</p>
+        <div class="summary-box">
+          <div><span>Выпуск</span><b>99 ₽</b></div>
+          <div><span>Обслуживание</span><b>0 ₽ / 5 лет</b></div>
+          <div><span>Комиссия сервиса</span><b>0%</b></div>
+        </div>
+        <label class="consent"><input type="checkbox" id="demoConsent"><span>Я понимаю, что это демонстрационная страница и реальные финансовые услуги здесь не оказываются.</span></label>
+        <button class="primary-btn wide" id="confirmOrder" disabled>Продолжить оформление</button>
+        <small class="privacy-note">Сайт не запрашивает и не отправляет имя, телефон, документы, данные карт или другие персональные сведения.</small>
+      </div>
+
+      <div class="modal-step hidden prank-step" id="prankStep">
+        <div class="prank-burst">😂</div>
+        <div class="eyebrow">Заявка успешно… не создана</div>
+        <h2>Ты чё, еблан? ВХАХАХАХ 😭</h2>
+        <p>Это наебалово — никаких карт тут нет. Тебя просто красиво разыграли.</p>
+        <div class="prank-ticket"><span>Статус заявки</span><b>ДРУГ ПОПАЛСЯ</b><small>Деньги и данные не списывались и не отправлялись.</small></div>
+        <button class="primary-btn wide" data-close-modal>Ладно, хорош 😂</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Выберите карту ниже</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
