@@ -1,11 +1,22 @@
+'use strict';
+
 const modal = document.getElementById('orderModal');
 const confirmStep = document.getElementById('confirmStep');
 const prankStep = document.getElementById('prankStep');
 const selectedCard = document.getElementById('selectedCard');
 const selectedCountry = document.getElementById('selectedCountry');
-const demoConsent = document.getElementById('demoConsent');
-const confirmOrder = document.getElementById('confirmOrder');
+const orderForm = document.getElementById('orderForm');
+const customerName = document.getElementById('customerName');
+const customerPhone = document.getElementById('customerPhone');
+const dataConsent = document.getElementById('dataConsent');
 const toast = document.getElementById('toast');
+
+function wipePersonalData() {
+  customerName.value = '';
+  customerPhone.value = '';
+  dataConsent.checked = false;
+  orderForm.reset();
+}
 
 function scrollToCards() {
   document.getElementById('cards')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -16,18 +27,19 @@ document.querySelectorAll('[data-scroll-cards]').forEach((button) => {
 });
 
 function openModal(card, country) {
+  wipePersonalData();
   selectedCard.textContent = card;
   selectedCountry.textContent = country;
   confirmStep.classList.remove('hidden');
   prankStep.classList.add('hidden');
-  demoConsent.checked = false;
-  confirmOrder.disabled = true;
   modal.classList.add('open');
   modal.setAttribute('aria-hidden', 'false');
   document.body.classList.add('modal-open');
+  window.setTimeout(() => customerName.focus(), 180);
 }
 
 function closeModal() {
+  wipePersonalData();
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('modal-open');
@@ -43,12 +55,19 @@ document.querySelectorAll('[data-close-modal]').forEach((element) => {
   element.addEventListener('click', closeModal);
 });
 
-demoConsent.addEventListener('change', () => {
-  confirmOrder.disabled = !demoConsent.checked;
+customerPhone.addEventListener('input', () => {
+  customerPhone.value = customerPhone.value.replace(/[^0-9+() -]/g, '');
 });
 
-confirmOrder.addEventListener('click', () => {
-  if (!demoConsent.checked) return;
+orderForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!orderForm.checkValidity()) {
+    orderForm.reportValidity();
+    return;
+  }
+
+  // First erase every personal value. Only after that reveal the joke.
+  wipePersonalData();
   confirmStep.classList.add('hidden');
   prankStep.classList.remove('hidden');
 });
@@ -64,7 +83,6 @@ filters.forEach((filter) => {
   filter.addEventListener('click', () => {
     filters.forEach((item) => item.classList.remove('active'));
     filter.classList.add('active');
-
     const category = filter.dataset.filter;
     cards.forEach((card) => {
       const shouldShow = category === 'all' || card.dataset.category === category;
@@ -81,8 +99,7 @@ function showToast(message) {
   toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
 }
 
-const navLinks = document.querySelectorAll('a[href^="#"]');
-navLinks.forEach((link) => {
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener('click', (event) => {
     const targetId = link.getAttribute('href');
     if (!targetId || targetId === '#') return;
@@ -93,11 +110,11 @@ navLinks.forEach((link) => {
   });
 });
 
-// Privacy guard: this demo intentionally contains no network requests,
-// no personal-data form fields, no localStorage/sessionStorage writes,
-// no analytics and no external API calls.
-if ('serviceWorker' in navigator) {
-  // No service worker is registered so nothing is cached beyond normal browser behavior.
-}
+// Extra cleanup for refresh, back/forward cache and tab closing.
+window.addEventListener('pageshow', wipePersonalData);
+window.addEventListener('pagehide', wipePersonalData);
+window.addEventListener('beforeunload', wipePersonalData);
 
-console.info('LumaCard demo loaded. No personal data collection is implemented.');
+// The page deliberately has no fetch/XHR, analytics, cookies,
+// localStorage, sessionStorage, service worker or external API calls.
+console.info('LumaCard loaded: application fields are local-only and cleared immediately.');
